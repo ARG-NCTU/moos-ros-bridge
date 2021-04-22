@@ -15,7 +15,7 @@ RUN apt-get update\
 # INSTALLING TOOL
 
 # INSTALLING MOOS-IVP
-RUN cd\
+RUN cd ~/ \
     && svn co --trust-server-cert --non-interactive https://oceanai.mit.edu/svn/moos-ivp-aro/trunk/ moos-ivp\
     && cd moos-ivp\
     && svn update --trust-server-cert --non-interactive
@@ -29,7 +29,7 @@ RUN cd ~/moos-ivp\
     && ./build.sh
 
 # SETTING MOOS-IVP VARIABLE PATH
-RUN cd \
+RUN cd ~/ \
     && apt install -y wget \
     && wget http://oceanai.mit.edu/2.680/docs/.bashrc \
     && rm .bashrc \
@@ -37,7 +37,6 @@ RUN cd \
 # SETTING MOOS-IVP VARIABLE PATH 
 
 RUN apt install netbase
-
 
 RUN apt-get update && apt-get install -y \ 
     ros-${ROS_DISTRO}-desktop-full \
@@ -74,26 +73,12 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 
-RUN cd\
-    && mkdir -p catkin_ws/src/\
-    && cd catkin_ws/src/\
-    && git clone https://github.com/bawkbak/moos-ros-bridge\
+RUN cd ~/ \
+    && git clone https://github.com/hsuchaochun/moos-ros-bridge.git \
     && cd ..\
     && echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc\
-    && echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+    && echo "source ~/moos-ros-bridge/catkin_ws/devel/setup.bash" >> ~/.bashrc
 #    && /bin/bash -c 'source /opt/ros/melodic/setup.bash;catkin_make'
-
-RUN cd\
-    && cd catkin_ws/src/\
-    && git clone https://github.com/bawkbak/posestamped_sim\
-    && cd ..
-#    && /bin/bash -c 'source /opt/ros/melodic/setup.bash;catkin_make' 
-
-RUN cd\
-    && cd catkin_ws/src/\
-    && git clone https://github.com/bawkbak/posestamped_to_stdmsgs\
-    && cd ..\
-    && /bin/bash -c 'source /opt/ros/melodic/setup.bash;catkin_make' 
 
 
 
