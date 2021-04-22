@@ -17,7 +17,8 @@ Processconfig = ANTLER
    
   Run = MOOSDB           @ NewConsole = false
   Run = MOOS_ROS_BRIDGE  @ NewConsole = false
-  Run = uMS              @ NewConsole = false 
+  Run = uXMS              @ NewConsole = false 
+  Run = pLOGger          @ NewConsole = false
 }
 
 
@@ -27,8 +28,66 @@ ProcessConfig = MOOS_ROS_BRIDGE
   CommsTick  = 20
 }
 
-ProcessConfig = uMS
+ProcessConfig = uXMS
 {
   AppTick    = 4
   CommsTick  = 4
+  VAR            = husky1/robot_pose/header/seq,husky1/robot_pose/header/stamp/sec 
+}
+
+ProcessConfig = pLOGger
+{
+
+  
+  AsyncLOG   = true
+  WildCardLOGging = true
+  WildCardOmitPattern = *_STATUS
+  FileTimeStamp   = true
+  LOG     = husky1/robot_pose/header/seq           @ 0
+  LOG     = husky1/robot_pose/header/stamp/sec     @ 0
+  LOG     = husky1/robot_pose/header/stamp/nsec    @ 0
+  LOG     = husky1/robot_pose/header/frame_id      @ 0
+  LOG     = husky1/robot_pose/pose/position/x      @ 0
+  LOG     = husky1/robot_pose/pose/position/y      @ 0
+  LOG     = husky1/robot_pose/pose/position/z      @ 0
+  LOG     = husky1/robot_pose/pose/orientation/x   @ 0
+  LOG     = husky1/robot_pose/pose/orientation/y   @ 0
+  LOG     = husky1/robot_pose/pose/orientation/z   @ 0
+  LOG     = husky1/robot_pose/pose/orientation/w   @ 0
+
+  LOG     = husky2/robot_pose/header/seq           @ 0
+  LOG     = husky2/robot_pose/header/stamp/sec     @ 0
+  LOG     = husky2/robot_pose/header/stamp/nsec    @ 0
+  LOG     = husky2/robot_pose/header/frame_id      @ 0
+  LOG     = husky2/robot_pose/pose/position/x      @ 0
+  LOG     = husky2/robot_pose/pose/position/y      @ 0
+  LOG     = husky2/robot_pose/pose/position/z      @ 0
+  LOG     = husky2/robot_pose/pose/orientation/x   @ 0
+  LOG     = husky2/robot_pose/pose/orientation/y   @ 0
+  LOG     = husky2/robot_pose/pose/orientation/z   @ 0
+  LOG     = husky2/robot_pose/pose/orientation/w   @ 0
+
+  LOG     = jackal1/robot_pose/header/seq           @ 0
+  LOG     = jackal1/robot_pose/header/stamp/sec     @ 0
+  LOG     = jackal1/robot_pose/header/stamp/nsec    @ 0
+  LOG     = jackal1/robot_pose/header/frame_id      @ 0
+  LOG     = jackal1/robot_pose/pose/position/x      @ 0
+  LOG     = jackal1/robot_pose/pose/position/y      @ 0
+  LOG     = jackal1/robot_pose/pose/position/z      @ 0
+  LOG     = jackal1/robot_pose/pose/orientation/x   @ 0
+  LOG     = jackal1/robot_pose/pose/orientation/y   @ 0
+  LOG     = jackal1/robot_pose/pose/orientation/z   @ 0
+  LOG     = jackal1/robot_pose/pose/orientation/w   @ 0
+
+  LOG     = jackal2/robot_pose/header/seq           @ 0
+  LOG     = jackal2/robot_pose/header/stamp/sec     @ 0
+  LOG     = jackal2/robot_pose/header/stamp/nsec    @ 0
+  LOG     = jackal2/robot_pose/header/frame_id      @ 0
+  LOG     = jackal2/robot_pose/pose/position/x      @ 0
+  LOG     = jackal2/robot_pose/pose/position/y      @ 0
+  LOG     = jackal2/robot_pose/pose/position/z      @ 0
+  LOG     = jackal2/robot_pose/pose/orientation/x   @ 0
+  LOG     = jackal2/robot_pose/pose/orientation/y   @ 0
+  LOG     = jackal2/robot_pose/pose/orientation/z   @ 0
+  LOG     = jackal2/robot_pose/pose/orientation/w   @ 0
 }

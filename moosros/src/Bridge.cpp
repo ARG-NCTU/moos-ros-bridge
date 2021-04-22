@@ -66,6 +66,8 @@
 #include "std_msgs/Float64.h"
 #include "std_msgs/String.h"
 
+
+
 #define FAIL 1
 #define SUCCESS 0
 
@@ -242,11 +244,12 @@ int CreateROSPubSub(xml_node<> *node, vector<MsgContainer> *pubVec, vector<MsgCo
 					      node->first_node("rosname")->value()));
 	  }else if(strcmp(node->first_node("rostype")->value(),"std_msgs/String/Binary") == SUCCESS){
                // Binary-string support
-               subVec->push_back(MsgContainer(n->subscribe(node->first_node("rosname")->value(),
-                                                           1000,binaryStringCallBack<std_msgs::String,std_msgs::StringConstPtr>, ros::TransportHints().unreliable()),
+            subVec->push_back(MsgContainer(n->subscribe(node->first_node("rosname")->value(),
+                                      1000,binaryStringCallBack<std_msgs::String,std_msgs::StringConstPtr>, ros::TransportHints().unreliable()),
                                               node->first_node("moosname")->value(),
                                               node->first_node("rosname")->value()));
-          }else{
+       }
+       else{
 	       ROS_INFO("ERROR PARSING XML CONFIG FILE\n");
 	       return FAIL;
 	  }
@@ -318,12 +321,10 @@ int main(int argc, char **argv)
      MOOSApp.AssignPublisher(&pubVec);
      boost::thread MOOSThread(MOOSInit, argv[2]);
 
-     int count = 0;
      while (ros::ok())
      {
           ros::spinOnce();
           loop_rate.sleep();
-          ++count;
      }
 
      return 0;
