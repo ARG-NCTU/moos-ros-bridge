@@ -1,0 +1,3 @@
+[submodule "catkin_ws/src/moos-ros-bridge"]
+	path = catkin_ws/src/moos-ros-bridge
+	url = https://github.com/ARG-NCTU/moos-ros-bridge.git
