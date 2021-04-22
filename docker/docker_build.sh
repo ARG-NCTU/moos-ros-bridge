@@ -1,0 +1,1 @@
+docker build -t="bawkbak/docker-moosrosbridge:01" .

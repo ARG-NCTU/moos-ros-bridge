@@ -1,0 +1,418 @@
+<moosrosconfig>
+
+<!-- husky1's robot_pose(geometry_msgs/posestamped) will be divide into these MOOSDB's variable... 
+  ->husky1/robot_pose/header/seq
+  ->husky1/robot_pose/header/stamp/sec
+  ->husky1/robot_pose/header/stamp/nsec
+  ->husky1/robot_pose/header/frame_id
+  ->husky1/robot_pose/pose/position/x
+  ->husky1/robot_pose/pose/position/y
+  ->husky1/robot_pose/pose/position/z
+  ->husky1/robot_pose/pose/orientation/x
+  ->husky1/robot_pose/pose/orientation/y
+  ->husky1/robot_pose/pose/orientation/z
+  ->husky1/robot_pose/pose/orientation/w
+-->
+  <message>
+    <moosname>husky1/robot_pose/header/seq</moosname>
+    <rosname>husky1/robot_pose/header/seq</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Int32</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>husky1/robot_pose/header/stamp/sec</moosname>
+    <rosname>husky1/robot_pose/header/stamp/sec</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Int32</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>husky1/robot_pose/header/stamp/nsec</moosname>
+    <rosname>husky1/robot_pose/header/stamp/nsec</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Int32</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>husky1/robot_pose/header/frame_id</moosname>
+    <rosname>husky1/robot_pose/header/frame_id</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/String</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>husky1/robot_pose/pose/position/x</moosname>
+    <rosname>husky1/robot_pose/pose/position/x</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+
+  <message>
+    <moosname>husky1/robot_pose/pose/position/y</moosname>
+    <rosname>husky1/robot_pose/pose/position/y</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>husky1/robot_pose/pose/position/z</moosname>
+    <rosname>husky1/robot_pose/pose/position/z</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>husky1/robot_pose/pose/orientation/x</moosname>
+    <rosname>husky1/robot_pose/pose/orientation/x</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+
+  <message>
+    <moosname>husky1/robot_pose/pose/orientation/y</moosname>
+    <rosname>husky1/robot_pose/pose/orientation/y</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>husky1/robot_pose/pose/orientation/z</moosname>
+    <rosname>husky1/robot_pose/pose/orientation/z</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>husky1/robot_pose/pose/orientation/w</moosname>
+    <rosname>husky1/robot_pose/pose/orientation/w</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+<!-- husky2's robot_pose(geometry_msgs/posestamped) will be divide into these MOOSDB's variable... 
+  ->husky2/robot_pose/header/seq
+  ->husky2/robot_pose/header/stamp/sec
+  ->husky2/robot_pose/header/stamp/nsec
+  ->husky2/robot_pose/header/frame_id
+  ->husky2/robot_pose/pose/position/x
+  ->husky2/robot_pose/pose/position/y
+  ->husky2/robot_pose/pose/position/z
+  ->husky2/robot_pose/pose/orientation/x
+  ->husky2/robot_pose/pose/orientation/y
+  ->husky2/robot_pose/pose/orientation/z
+  ->husky2/robot_pose/pose/orientation/w
+-->
+
+  <message>
+    <moosname>husky2/robot_pose/header/seq</moosname>
+    <rosname>husky2/robot_pose/header/seq</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Int32</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>husky2/robot_pose/header/stamp/sec</moosname>
+    <rosname>husky2/robot_pose/header/stamp/sec</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Int32</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>husky2/robot_pose/header/stamp/nsec</moosname>
+    <rosname>husky2/robot_pose/header/stamp/nsec</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Int32</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>husky2/robot_pose/header/frame_id</moosname>
+    <rosname>husky2/robot_pose/header/frame_id</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/String</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>husky2/robot_pose/pose/position/x</moosname>
+    <rosname>husky2/robot_pose/pose/position/x</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+
+  <message>
+    <moosname>husky2/robot_pose/pose/position/y</moosname>
+    <rosname>husky2/robot_pose/pose/position/y</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>husky2/robot_pose/pose/position/z</moosname>
+    <rosname>husky2/robot_pose/pose/position/z</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>husky2/robot_pose/pose/orientation/x</moosname>
+    <rosname>husky2/robot_pose/pose/orientation/x</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+
+  <message>
+    <moosname>husky2/robot_pose/pose/orientation/y</moosname>
+    <rosname>husky2/robot_pose/pose/orientation/y</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>husky2/robot_pose/pose/orientation/z</moosname>
+    <rosname>husky2/robot_pose/pose/orientation/z</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>husky2/robot_pose/pose/orientation/w</moosname>
+    <rosname>husky2/robot_pose/pose/orientation/w</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+
+<!-- jackal1's robot_pose(geometry_msgs/posestamped) will be divide into these MOOSDB's variable... 
+  ->jackal1/robot_pose/header/seq
+  ->jackal1/robot_pose/header/stamp/sec
+  ->jackal1/robot_pose/header/stamp/nsec
+  ->jackal1/robot_pose/header/frame_id
+  ->jackal1/robot_pose/pose/position/x
+  ->jackal1/robot_pose/pose/position/y
+  ->jackal1/robot_pose/pose/position/z
+  ->jackal1/robot_pose/pose/orientation/x
+  ->jackal1/robot_pose/pose/orientation/y
+  ->jackal1/robot_pose/pose/orientation/z
+  ->jackal1/robot_pose/pose/orientation/w
+-->
+  <message>
+    <moosname>jackal1/robot_pose/header/seq</moosname>
+    <rosname>jackal1/robot_pose/header/seq</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Int32</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>jackal1/robot_pose/header/stamp/sec</moosname>
+    <rosname>jackal1/robot_pose/header/stamp/sec</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Int32</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>jackal1/robot_pose/header/stamp/nsec</moosname>
+    <rosname>jackal1/robot_pose/header/stamp/nsec</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Int32</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>jackal1/robot_pose/header/frame_id</moosname>
+    <rosname>jackal1/robot_pose/header/frame_id</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/String</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>jackal1/robot_pose/pose/position/x</moosname>
+    <rosname>jackal1/robot_pose/pose/position/x</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+
+  <message>
+    <moosname>jackal1/robot_pose/pose/position/y</moosname>
+    <rosname>jackal1/robot_pose/pose/position/y</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>jackal1/robot_pose/pose/position/z</moosname>
+    <rosname>jackal1/robot_pose/pose/position/z</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>jackal1/robot_pose/pose/orientation/x</moosname>
+    <rosname>jackal1/robot_pose/pose/orientation/x</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+
+  <message>
+    <moosname>jackal1/robot_pose/pose/orientation/y</moosname>
+    <rosname>jackal1/robot_pose/pose/orientation/y</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>jackal1/robot_pose/pose/orientation/z</moosname>
+    <rosname>jackal1/robot_pose/pose/orientation/z</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>jackal1/robot_pose/pose/orientation/w</moosname>
+    <rosname>jackal1/robot_pose/pose/orientation/w</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+
+<!-- jackal2's robot_pose(geometry_msgs/posestamped) will be divide into these MOOSDB's variable... 
+  ->jackal2/robot_pose/header/seq
+  ->jackal2/robot_pose/header/stamp/sec
+  ->jackal2/robot_pose/header/stamp/nsec
+  ->jackal2/robot_pose/header/frame_id
+  ->jackal2/robot_pose/pose/position/x
+  ->jackal2/robot_pose/pose/position/y
+  ->jackal2/robot_pose/pose/position/z
+  ->jackal2/robot_pose/pose/orientation/x
+  ->jackal2/robot_pose/pose/orientation/y
+  ->jackal2/robot_pose/pose/orientation/z
+  ->jackal2/robot_pose/pose/orientation/w
+-->
+  <message>
+    <moosname>jackal2/robot_pose/header/seq</moosname>
+    <rosname>jackal2/robot_pose/header/seq</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Int32</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>jackal2/robot_pose/header/stamp/sec</moosname>
+    <rosname>jackal2/robot_pose/header/stamp/sec</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Int32</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>jackal2/robot_pose/header/stamp/nsec</moosname>
+    <rosname>jackal2/robot_pose/header/stamp/nsec</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Int32</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>jackal2/robot_pose/header/frame_id</moosname>
+    <rosname>jackal2/robot_pose/header/frame_id</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/String</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>jackal2/robot_pose/pose/position/x</moosname>
+    <rosname>jackal2/robot_pose/pose/position/x</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+
+  <message>
+    <moosname>jackal2/robot_pose/pose/position/y</moosname>
+    <rosname>jackal2/robot_pose/pose/position/y</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>jackal2/robot_pose/pose/position/z</moosname>
+    <rosname>jackal2/robot_pose/pose/position/z</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>jackal2/robot_pose/pose/orientation/x</moosname>
+    <rosname>jackal2/robot_pose/pose/orientation/x</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+
+  <message>
+    <moosname>jackal2/robot_pose/pose/orientation/y</moosname>
+    <rosname>jackal2/robot_pose/pose/orientation/y</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>jackal2/robot_pose/pose/orientation/z</moosname>
+    <rosname>jackal2/robot_pose/pose/orientation/z</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>jackal2/robot_pose/pose/orientation/w</moosname>
+    <rosname>jackal2/robot_pose/pose/orientation/w</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+</moosrosconfig>

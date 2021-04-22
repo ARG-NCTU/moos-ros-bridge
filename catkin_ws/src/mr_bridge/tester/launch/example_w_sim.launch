@@ -1,0 +1,24 @@
+<launch>
+
+  <node pkg="moosros" type="Bridge" name="Bridge" 
+        args="$(find moosros)/moos/example/moosconfig.xml $(find moosros)/moos/example/bridge.moos" 
+        respawn="false" output="screen" />
+  <node pkg="posestamped_to_stdmsgs" type="transform" name="transform"/>
+  <group ns="husky1">
+    <node name="robot_sim1" pkg="posestamped_sim" type="posestamped_sim"/>
+    <node name="msg_transform" pkg="posestamped_to_stdmsgs" type="transform" output="screen"/>
+  </group>
+  <group ns="husky2">
+    <node name="robot_sim1" pkg="posestamped_sim" type="posestamped_sim"/>
+    <node name="msg_transform" pkg="posestamped_to_stdmsgs" type="transform" output="screen"/>
+  </group>
+  <group ns="jackal1">
+    <node name="robot_sim1" pkg="posestamped_sim" type="posestamped_sim"/>
+    <node name="msg_transform" pkg="posestamped_to_stdmsgs" type="transform" output="screen"/>
+  </group>
+  <group ns="jackal2">
+    <node name="robot_sim1" pkg="posestamped_sim" type="posestamped_sim"/>
+    <node name="msg_transform" pkg="posestamped_to_stdmsgs" type="transform" output="screen"/>
+  </group>
+  
+</launch>
