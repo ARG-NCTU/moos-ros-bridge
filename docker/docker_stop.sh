@@ -1,3 +1,3 @@
-containerid=$(docker ps  -qf "ancestor=bawkbak/docker-moosrosbridge:01")
+containerid=$(docker ps  -qf "ancestor=hsuchaochun/moosrosbridge:u18")
 docker stop $containerid
 echo "stop $containerid"

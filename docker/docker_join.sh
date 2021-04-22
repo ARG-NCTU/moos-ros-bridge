@@ -1,4 +1,4 @@
-containerid=$(docker ps  -qf "ancestor=bawkbak/docker-moosrosbridge:01")
+containerid=$(docker ps  -qf "ancestor=hsuchaochun/moosrosbridge:u18")
 echo $containerid
 if [ $containerid ] 
 then 
@@ -6,5 +6,5 @@ then
     docker exec -it $containerid bash
 else
     echo "create a new container"
-    docker run -itd bawkbak/docker-moosrosbridge:01
+    docker run -itd hsuchaochun/moosrosbridge:u18
 fi

@@ -1,1 +1,1 @@
-docker build -t="bawkbak/docker-moosrosbridge:01" .
+docker build -t="hsuchaochun/moosrosbridge:u18" .
