@@ -1,0 +1,23 @@
+<moosrosconfig>
+
+  <!-- ROS Publish NODE_REPORT_LOCAL-->
+  <message>
+    <moosname>NODE_REPORT</moosname>
+    <rosname>NODE_REPORT</rosname>
+    <moostype>String</moostype>
+    <rostype>std_msgs/String</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+
+  <!-- MOOS Publish DB_TIME -->
+  <message>
+    <moosname>DB_TIME</moosname>
+    <rosname>DB_TIME</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toROS</direction>
+  </message>
+
+
+</moosrosconfig>
