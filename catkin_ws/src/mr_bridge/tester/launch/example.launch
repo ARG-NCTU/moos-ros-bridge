@@ -1,7 +1,7 @@
 <launch>
 
-  <node pkg="moosros" type="Bridge" name="Bridge" 
-        args="$(find moosros)/moos/example/moosconfig.xml $(find moosros)/moos/example/bridge.moos" 
+  <node pkg="bridge" type="Bridge" name="Bridge" 
+        args="$(find bridge)/m_launch/example/moosconfig.xml $(find bridge)/m_launch/example/bridge.moos" 
         respawn="false" output="screen" />
   <node pkg="posestamped_to_stdmsgs" type="transform" name="transform"/>
   <group ns="husky1">
