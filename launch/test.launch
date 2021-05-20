@@ -1,0 +1,10 @@
+<launch>
+  <arg name="veh" />
+
+  <group ns="$(arg veh)">
+    <node pkg="moos-ros-bridge" type="Bridge" name="Bridge" 
+          args="$(find moos-ros-bridge)/config/lab_18.xml $(find moos-ros-bridge)/config/bridge.moos" 
+          respawn="false" output="screen" />
+  </group>
+
+</launch>
