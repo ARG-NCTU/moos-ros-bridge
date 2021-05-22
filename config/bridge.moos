@@ -1,11 +1,11 @@
 //------------------------------------------------
-// File: bravo.bhv
-// Name: M. Benjamin
+// File: bridge.moos
+// Name: chaochunHsu
 // Date: Jan 1, 2010
 //------------------------------------------------
 
 ServerHost = localhost
-ServerPort = 9000
+ServerPort = 9002
 Simulator  = true
 
 Community    = moosros
@@ -14,8 +14,8 @@ MOOSTimeWarp = 1
 Processconfig = ANTLER
 {
   MSBetweenLaunches = 100
-   
-  Run = MOOSDB           @ NewConsole = false
+
+  //Run = MOOSDB           @ NewConsole = false  
   Run = MOOS_ROS_BRIDGE  @ NewConsole = false
   Run = uMS              @ NewConsole = false 
 }
