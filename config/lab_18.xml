@@ -1,0 +1,76 @@
+<moosrosconfig>
+<!-- from ros to moos-->
+    <!-- Nav Info-->
+  <message>
+    <moosname>NAV_X</moosname>
+    <rosname>localization_gps_imu/pub2moos/VEH_X</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+  <message>
+    <moosname>NAV_Y</moosname>
+    <rosname>localization_gps_imu/pub2moos/VEH_Y</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>NAV_LAT</moosname>
+    <rosname>localization_gps_imu/pub2moos/VEH_LAT</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+  <message>
+    <moosname>NAV_LONG</moosname>
+    <rosname>localization_gps_imu/pub2moos/VEH_LON</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>NAV_HEADING</moosname>
+    <rosname>localization_gps_imu/pub2moos/VEH_HEADING</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+  <message>
+    <moosname>NAV_SPEED</moosname>
+    <rosname>localization_gps_imu/pub2moos/VEH_SPEED</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <!-- Task Info -->
+
+<!-- from moos to ros-->
+  <message>
+    <moosname>ROS_THRUST_R</moosname>
+    <rosname>pub2ros/thrusters/right_thrust_cmd</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float32</rostype>
+    <direction>toROS</direction>
+  </message>
+
+  <message>
+    <moosname>ROS_THRUST_L</moosname>
+    <rosname>pub2ros/thrusters/left_thrust_cmd</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float32</rostype>
+    <direction>toROS</direction>
+  </message>
+
+  <message>
+    <moosname>ROS_THRUST_BOW</moosname>
+    <rosname>pub2ros/thrusters/bow_thrust_cmd</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float32</rostype>
+    <direction>toROS</direction>
+  </message>
+
+</moosrosconfig>

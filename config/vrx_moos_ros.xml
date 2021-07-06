@@ -1,0 +1,177 @@
+<moosrosconfig>
+<!-- from ros to moos-->
+    <!-- Nav Info-->
+  <message>
+    <moosname>NAV_X</moosname>
+    <rosname>pubmoos/WAMV_X</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>NAV_Y</moosname>
+    <rosname>pubmoos/WAMV_Y</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>NAV_LAT</moosname>
+    <rosname>pubmoos/WAMV_LAT</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>NAV_LONG</moosname>
+    <rosname>pubmoos/WAMV_LON</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>NAV_HEADING</moosname>
+    <rosname>pubmoos/WAMV_HEADING</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+  <message>
+    <moosname>NAV_PITCH</moosname>
+    <rosname>pubmoos/WAMV_PITCH</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+  <message>
+    <moosname>NAV_SPEED</moosname>
+    <rosname>pubmoos/WAMV_SPEED</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+  <message>
+    <moosname>NAV_Z_ANGULAR_V</moosname>
+    <rosname>pubmoos/WAMV_Z_ANGULAR_V</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>NAV_BOW_SPEED</moosname>
+    <rosname>pubmoos/WAMV_BOW_SPEED</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <!-- Task Info -->
+  <message>
+    <moosname>TASK_NAME</moosname>
+    <rosname>pubmoos/TASK_NAME</rosname>
+    <moostype>String</moostype>
+    <rostype>std_msgs/String</rostype>
+    <direction>toMOOS</direction>
+  </message>
+  <message>
+    <moosname>TASK_STATUS</moosname>
+    <rosname>pubmoos/TASK_STATUS</rosname>
+    <moostype>String</moostype>
+    <rostype>std_msgs/String</rostype>
+    <direction>toMOOS</direction>
+  </message>
+  <message>
+    <moosname>TASK_LON</moosname>
+    <rosname>pubmoos/TASK_LON</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+  <message>
+    <moosname>TASK_LAT</moosname>
+    <rosname>pubmoos/TASK_LAT</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+  <message>
+    <moosname>TASK_HDG</moosname>
+    <rosname>pubmoos/TASK_HDG</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toMOOS</direction>
+  </message>
+  <message>
+    <moosname>TASK_OBSTACLE</moosname>
+    <rosname>ntu/abs_obstacle</rosname>
+    <moostype>String</moostype>
+    <rostype>std_msgs/String</rostype>
+    <direction>toMOOS</direction>
+  </message>
+  <message>
+    <moosname>SCAN_DOCK_END</moosname>
+    <rosname>ntu/scan_dock_end</rosname>
+    <moostype>String</moostype>
+    <rostype>std_msgs/String</rostype>
+    <direction>toMOOS</direction>
+  </message>
+  <message>
+    <moosname>SCAN_TOWER_END</moosname>
+    <rosname>ntu/scan_tower_end</rosname>
+    <moostype>String</moostype>
+    <rostype>std_msgs/String</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+<!-- from moos to ros-->
+  <message>
+    <moosname>ROS_THRUST_R</moosname>
+    <rosname>wamv/thrusters/right_thrust_cmd</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float32</rostype>
+    <direction>toROS</direction>
+  </message>
+
+  <message>
+    <moosname>ROS_THRUST_L</moosname>
+    <rosname>wamv/thrusters/left_thrust_cmd</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float32</rostype>
+    <direction>toROS</direction>
+  </message>
+
+  <message>
+    <moosname>ROS_THRUST_BOW</moosname>
+    <rosname>wamv/thrusters/bow_thrust_cmd</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float32</rostype>
+    <direction>toROS</direction>
+  </message>
+
+  <message>
+    <moosname>TASK3_ANS</moosname>
+    <rosname>ntu/task3_ans</rosname>
+    <moostype>String</moostype>
+    <rostype>std_msgs/String</rostype>
+    <direction>toROS</direction>
+  </message>
+  <message>
+    <moosname>SCAN_TOWER_START</moosname>
+    <rosname>ntu/scan_tower_start</rosname>
+    <moostype>String</moostype>
+    <rostype>std_msgs/String</rostype>
+    <direction>toROS</direction>
+  </message>
+  <message>
+    <moosname>SCAN_DOCK_START</moosname>
+    <rosname>ntu/scan_dock_start</rosname>
+    <moostype>String</moostype>
+    <rostype>std_msgs/String</rostype>
+    <direction>toROS</direction>
+  </message>
+</moosrosconfig>

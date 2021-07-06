@@ -1,0 +1,25 @@
+<launch>
+
+    <arg name="param_file" default="param_gazeboToMoos"/>
+    <arg name="param_task" default="param_taskInfoTransform"/>
+    <arg name="mission_folder" default="s1_way_point"/>
+
+
+    <!-- moos-ros-bridge Node -->
+  <node pkg="moos-ros-bridge" type="Bridge" name="Bridge" 
+        args="$(find moos-ros-bridge)/config/vrx_moos_ros.xml ~/ntu_vrx/moos-ivp-ntuvrx/mission/$(arg mission_folder)/alpha.moos" 
+        respawn="false" output="screen" />
+
+  <node pkg="moos-ros-bridge" type="counter" name="counter" respawn="false" 
+        output="screen" />
+  
+
+    <!-- Node --> 
+    <node name="gazeboToMoos" pkg="transform_gazebo_msg" type="gazeboToMoos" output="screen" clear_params="true" required="true">
+        <rosparam command="load" file="$(find transform_gazebo_msg)/config/$(arg param_file).yaml" />
+    </node>
+    <node name="taskInfoTransform" pkg="transform_gazebo_msg" type="taskInfoTransform" output="screen" clear_params="true" required="true">
+        <rosparam command="load" file="$(find transform_gazebo_msg)/config/$(arg param_task).yaml" />
+    </node>
+
+</launch>
