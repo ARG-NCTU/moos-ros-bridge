@@ -5,7 +5,7 @@
 //------------------------------------------------
 
 ServerHost = localhost
-ServerPort = 9002
+ServerPort = 9201
 Simulator  = true
 
 Community    = moosros
@@ -17,13 +17,13 @@ Processconfig = ANTLER
 
   //Run = MOOSDB           @ NewConsole = false  
   Run = MOOS_ROS_BRIDGE  @ NewConsole = false
-  Run = uMS              @ NewConsole = false 
+  //Run = uMS              @ NewConsole = false 
 }
 
 
 ProcessConfig = MOOS_ROS_BRIDGE
 {
-  AppTick    = 1
+  AppTick    = 10
   CommsTick  = 20
 }
 

@@ -1,5 +1,22 @@
 <moosrosconfig>
 <!-- from ros to moos-->
+  <message>
+    <moosname>DESIRED_RUDDER</moosname>
+    <rosname>pub2ros/thrusters/rudder</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toROS</direction>
+  </message>
+
+  <message>
+    <moosname>DESIRED_THRUST</moosname>
+    <rosname>pub2ros/thrusters/speed</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float64</rostype>
+    <direction>toROS</direction>
+  </message>
+
+
     <!-- Nav Info-->
   <message>
     <moosname>NAV_X</moosname>
@@ -49,28 +66,6 @@
   <!-- Task Info -->
 
 <!-- from moos to ros-->
-  <message>
-    <moosname>ROS_THRUST_R</moosname>
-    <rosname>pub2ros/thrusters/right_thrust_cmd</rosname>
-    <moostype>Double</moostype>
-    <rostype>std_msgs/Float32</rostype>
-    <direction>toROS</direction>
-  </message>
 
-  <message>
-    <moosname>ROS_THRUST_L</moosname>
-    <rosname>pub2ros/thrusters/left_thrust_cmd</rosname>
-    <moostype>Double</moostype>
-    <rostype>std_msgs/Float32</rostype>
-    <direction>toROS</direction>
-  </message>
-
-  <message>
-    <moosname>ROS_THRUST_BOW</moosname>
-    <rosname>pub2ros/thrusters/bow_thrust_cmd</rosname>
-    <moostype>Double</moostype>
-    <rostype>std_msgs/Float32</rostype>
-    <direction>toROS</direction>
-  </message>
 
 </moosrosconfig>
