@@ -1,0 +1,43 @@
+<moosrosconfig>
+
+    <message>
+        <moosname>NAV_X</moosname>
+        <rosname>moos/nav_x</rosname>
+        <moostype>Double</moostype>
+        <rostype>std_msgs/Float32</rostype>
+        <direction>toROS</direction>
+    </message>
+
+    <message>
+        <moosname>NAV_Y</moosname>
+        <rosname>moos/nav_y</rosname>
+        <moostype>Double</moostype>
+        <rostype>std_msgs/Float32</rostype>
+        <direction>toROS</direction>
+    </message>
+
+    <message>
+        <moosname>NAV_HEADING</moosname>
+        <rosname>moos/nav_heading</rosname>
+        <moostype>Double</moostype>
+        <rostype>std_msgs/Float32</rostype>
+        <direction>toROS</direction>
+    </message>
+
+    <message>
+        <moosname>NAV_SPEED</moosname>
+        <rosname>moos/nav_speed</rosname>
+        <moostype>Double</moostype>
+        <rostype>std_msgs/Float32</rostype>
+        <direction>toROS</direction>
+    </message>
+
+    <message>
+        <moosname>NAV_DEPTH</moosname>
+        <rosname>moos/nav_depth</rosname>
+        <moostype>Double</moostype>
+        <rostype>std_msgs/Float32</rostype>
+        <direction>toROS</direction>
+    </message>
+
+</moosrosconfig>
