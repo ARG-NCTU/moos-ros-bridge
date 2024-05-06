@@ -4,7 +4,7 @@
         args="$(find moos-ros-bridge)/config/s1_alpha_toROS.xml"
         respawn="false" output="screen" />
 
-  <node pkg="moos-ros-bridge" type="counter" name="counter" respawn="false" 
-        output="screen" />
+  <!-- <node pkg="moos-ros-bridge" type="counter" name="counter" respawn="false" 
+        output="screen" /> -->
 
 </launch>
