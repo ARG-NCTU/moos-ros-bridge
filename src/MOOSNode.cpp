@@ -141,8 +141,8 @@ bool MOOSNode::Iterate(){
 */
 bool MOOSNode::OnStartUp()
 {
-     appTick = 1;
-     commsTick = 1;
+     appTick = 16;
+     commsTick = 16;
 
      if(!m_MissionReader.GetConfigurationParam("AppTick",appTick)){
 	  MOOSTrace("Warning, AppTick not set.\n");
