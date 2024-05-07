@@ -1,0 +1,61 @@
+<moosrosconfig>
+<!-- from ros to moos-->
+    <!-- wamv Info-->
+  <message>
+        <moosname>WAMV_X</moosname>
+        <rosname>moos/wamv_x</rosname>
+        <moostype>Double</moostype>
+        <rostype>std_msgs/Float32</rostype>
+        <direction>toROS</direction>
+    </message>
+
+    <message>
+        <moosname>WAMV_Y</moosname>
+        <rosname>moos/wamv_y</rosname>
+        <moostype>Double</moostype>
+        <rostype>std_msgs/Float32</rostype>
+        <direction>toROS</direction>
+    </message>
+
+    <message>
+        <moosname>WAMV_HEADING</moosname>
+        <rosname>moos/wamv_heading</rosname>
+        <moostype>Double</moostype>
+        <rostype>std_msgs/Float32</rostype>
+        <direction>toROS</direction>
+    </message>
+
+    <message>
+        <moosname>WAMV_SPEED</moosname>
+        <rosname>moos/wamv_speed</rosname>
+        <moostype>Double</moostype>
+        <rostype>std_msgs/Float32</rostype>
+        <direction>toROS</direction>
+    </message>
+
+    <message>
+        <moosname>WAMV_DEPTH</moosname>
+        <rosname>moos/wamv_depth</rosname>
+        <moostype>Double</moostype>
+        <rostype>std_msgs/Float32</rostype>
+        <direction>toROS</direction>
+    </message>
+
+  <!-- Task Info -->
+  <message>
+    <moosname>toWAMV_waypt_X</moosname>
+    <rosname>pubmoos/tomoos_waypt_x</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float32</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
+  <message>
+    <moosname>toWAMV_waypt_Y</moosname>
+    <rosname>pubmoos/tomoos_waypt_y</rosname>
+    <moostype>Double</moostype>
+    <rostype>std_msgs/Float32</rostype>
+    <direction>toMOOS</direction>
+  </message>
+  
+</moosrosconfig>
