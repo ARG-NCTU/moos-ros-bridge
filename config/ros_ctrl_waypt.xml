@@ -43,7 +43,7 @@
 
   <!-- Task Info -->
   <message>
-    <moosname>toWAMV_waypt_X</moosname>
+    <moosname>ROSWPX</moosname>
     <rosname>pubmoos/tomoos_waypt_x</rosname>
     <moostype>Double</moostype>
     <rostype>std_msgs/Float32</rostype>
@@ -51,11 +51,19 @@
   </message>
 
   <message>
-    <moosname>toWAMV_waypt_Y</moosname>
+    <moosname>ROSWPY</moosname>
     <rosname>pubmoos/tomoos_waypt_y</rosname>
     <moostype>Double</moostype>
     <rostype>std_msgs/Float32</rostype>
     <direction>toMOOS</direction>
   </message>
-  
+
+  <message>
+    <moosname>ROSWP</moosname>
+    <rosname>pubmoos/tomoos_waypt</rosname>
+    <moostype>String</moostype>
+    <rostype>std_msgs/String/Binary</rostype>
+    <direction>toMOOS</direction>
+  </message>
+
 </moosrosconfig>
