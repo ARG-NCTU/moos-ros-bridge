@@ -151,7 +151,7 @@ void binaryStringCallBack(const ros::MessageEvent<T const> &event)
           if (it.rosName == topic)
           {
                const C &msg = event.getMessage();
-               MOOSApp.toMOOSBinaryString(it->moosName, msg->data);
+               MOOSApp.toMOOSBinaryString(it.moosName, msg->data);
           }
      }
 }
