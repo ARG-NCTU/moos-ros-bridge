@@ -35,7 +35,7 @@ package manager:
 2. Clone this repo into into `~/catkin_ws/src`:
 
         $ cd ~/catkin_ws/src
-        $ git clone https://github.com/SyllogismRXS/moos-ros-bridge.git
+        $ git clone https://github.com/ARG-NCTU/moos-ros-bridge.git
 
 3. Build it:
 
